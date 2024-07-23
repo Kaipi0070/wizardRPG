@@ -17,7 +17,7 @@ public class DateUpdater : MonoBehaviour
         DateTime currentDate = DateTime.Now;
 
         // Abbreviations for the days of the week
-        string[] dayOfWeekAbbr = { "Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat" };
+        string[] dayOfWeekAbbr = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
 
         // Get the abbreviated day of the week
         string dayOfWeek = dayOfWeekAbbr[(int)currentDate.DayOfWeek];
