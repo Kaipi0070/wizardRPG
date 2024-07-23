@@ -213,6 +213,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527715288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2371479404167223616, guid: 2a05f8f344c0849db9b61ed34ede1b2f, type: 3}
+  m_PrefabInstance: {fileID: 1940970750}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &630824134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2898936847283191334, guid: 2a05f8f344c0849db9b61ed34ede1b2f, type: 3}
+  m_PrefabInstance: {fileID: 1940970750}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674639169
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,6 +7871,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1940970753}
   amPmText: {fileID: 1940970751}
+  dayNumText: {fileID: 1192662026}
+  countdownText: {fileID: 630824134}
+  seasonIcon: {fileID: 527715288}
+  springIcon: {fileID: 21300000, guid: dbf56e314d84943f6bbf683c3f4affda, type: 3}
+  summerIcon: {fileID: 21300000, guid: 8f8da6f431eac4c42bb384b094ffb320, type: 3}
+  fallIcon: {fileID: 21300000, guid: ffd485265bd0c441287ec5ec95ad931a, type: 3}
+  winterIcon: {fileID: 21300000, guid: b4145f0632e4c44438a0e72e28aefc02, type: 3}
+--- !u!114 &1192662026 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5287409462967604614, guid: 2a05f8f344c0849db9b61ed34ede1b2f, type: 3}
+  m_PrefabInstance: {fileID: 1940970750}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1337892936
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,6 +7990,10 @@ PrefabInstance:
     - target: {fileID: 8802249992865741061, guid: 2a05f8f344c0849db9b61ed34ede1b2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044822180278472831, guid: 2a05f8f344c0849db9b61ed34ede1b2f, type: 3}
+      propertyPath: m_Name
+      value: Text _money(TMP)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

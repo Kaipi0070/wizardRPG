@@ -51,45 +51,38 @@ public class TimeUpdater : MonoBehaviour
 
     System.Collections.IEnumerator CountdownAndUpdateDay()
     {
-        while (true)
+        while (countdownTime > 0)
         {
-            // Update the countdown text
-            countdownText.text = "Countdown: " + countdownTime.ToString();
-
-            // Wait for 1 second
+            Debug.Log("Countdown Time: " + countdownTime);
+            countdownText.text = "Countdown: " + countdownTime.ToString(); // Update the countdown text
             yield return new WaitForSeconds(1);
-
-            // Decrement the countdown time
             countdownTime--;
-
-            // If the countdown reaches zero
-            if (countdownTime <= 0)
-            {
-                // Increment the day number
-                dayNum++;
-                if (dayNum > 3)
-                {
-                    dayNum = 1; // Reset to day 1 after reaching day 3
-
-                    // Increment the season cycle
-                    seasonCycle++;
-                    if (seasonCycle > 4)
-                    {
-                        seasonCycle = 1; // Reset to Spring after Winter
-                    }
-
-                    // Update the season icon based on the current season cycle
-                    UpdateSeasonIcon();
-                }
-
-                // Update the dayNumText with "Day X" format
-                dayNumText.text = "Day " + dayNum.ToString();
-                Debug.Log("Day Number: " + dayNum);
-
-                // Reset the countdown time for the next cycle
-                countdownTime = 10;
-            }
         }
+
+        // Increment the day number
+        dayNum++;
+        if (dayNum > 3)
+        {
+            dayNum = 1; // Reset to day 1 after reaching day 3
+
+            // Increment the season cycle
+            seasonCycle++;
+            if (seasonCycle > 4)
+            {
+                seasonCycle = 1; // Reset to Spring after Winter
+            }
+
+            // Update the season icon based on the current season cycle
+            UpdateSeasonIcon();
+        }
+
+        // Update the dayNumText with "Day X" format
+        dayNumText.text = "Day " + dayNum.ToString();
+        Debug.Log("Day Number: " + dayNum);
+
+        // Reset the countdown time for the next cycle
+        countdownTime = 10;
+        StartCoroutine(CountdownAndUpdateDay());
     }
 
     void UpdateSeasonIcon()
