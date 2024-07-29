@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 820518133989720958}
   - component: {fileID: 5369993492419728763}
   m_Layer: 5
-  m_Name: Text (TMP)_Day
+  m_Name: Day_Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b4145f0632e4c44438a0e72e28aefc02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbf56e314d84943f6bbf683c3f4affda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1045,7 +1045,7 @@ GameObject:
   - component: {fileID: 5408130925917092653}
   - component: {fileID: 5287409462967604614}
   m_Layer: 5
-  m_Name: Text (TMP)_DayNum
+  m_Name: DayNum_Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
